@@ -6,6 +6,7 @@ import QuickLinks from '../components/QuickLinks';
 import InstituteHighlights from '../components/InstituteHighlights';
 import CallToAction from '../components/CallToAction';
 import VirtualTour from '../components/VirtualTour';
+import SocialLinks from '../components/SocialLinks';
 
 const Home = () => {
   return (
@@ -32,6 +33,19 @@ const Home = () => {
         </div>
       </section>
       <CallToAction />
+      
+      {/* Social Media Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Connect With Us</h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Stay updated with the latest news and events from BTI College
+            </p>
+            <SocialLinks className="justify-center" iconSize={32} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

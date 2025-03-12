@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as Icons from 'lucide-react';
+import Chatbot from '../components/Chatbot';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -127,6 +128,8 @@ const FAQ = () => {
           ))}
         </div>
       </div>
+
+      <Chatbot />
     </div>
   );
 };
